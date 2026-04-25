@@ -3,21 +3,95 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AfriTalent — Accueil</title>
-<!-- Bootstrap 5 via CDN : feuille de style -->
-<link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
-<!-- Votre feuille de style personnelle -->
-<link rel="stylesheet" href="css/style.css">
+<title>AfriTalent — À propos</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<!-- Le contenu de la page sera ajoute ici -->
-<!-- Bootstrap 5 via CDN : script JavaScript -->
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script>
-<!-- Votre script JavaScript -->
-<script src="js/main.js"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">AfriTalent</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="about.html">À propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section class="text-center mb-5">
+            <h1>À propos d'AfriTalent</h1>
+            <p class="lead">Texte fictif : La plateforme qui connecte l'excellence africaine aux opportunités mondiales depuis 2024.</p>
+        </section>
+
+        <section class="mb-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h2>Notre Histoire</h2>
+                    <p>Texte fictif : Fondée à Dakar en 2024 par un collectif d'entrepreneurs tech, AfriTalent est née d'un constat simple : le continent africain regorge de talents digitaux sous-exploités. Notre mission est de briser les barrières géographiques et de donner accès à ces compétences au marché international.</p>
+                    <p>Texte fictif : Aujourd'hui, AfriTalent compte +500 freelances vérifiés dans 15 pays africains et collabore avec des entreprises en Europe, Amérique du Nord et Moyen-Orient.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <h3 class="display-4 text-primary">500+</h3>
+                            <p class="mb-0">Freelances vérifiés</p>
+                            <hr>
+                            <h3 class="display-4 text-primary">15</h3>
+                            <p class="mb-0">Pays couverts</p>
+                            <hr>
+                            <h3 class="display-4 text-primary">98%</h3>
+                            <p class="mb-0">Clients satisfaits</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Nos Valeurs</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Excellence</h5>
+                            <p class="card-text">Texte fictif : Chaque freelance est sélectionné via un processus de vérification en 3 étapes. Seuls 20% des candidats sont retenus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Transparence</h5>
+                            <p class="card-text">Texte fictif : Tarifs clairs, pas de frais cachés. Les commissions sont affichées dès le départ : 10% côté client, 10% côté freelance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Impact</h5>
+                            <p class="card-text">Texte fictif : Pour chaque projet complété, 1% est reversé pour financer des formations numériques pour les jeunes en Afrique.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white text-center py-4 mt-5">
+        <p class="mb-0">Vous êtes freelance ? Rejoignez AfriTalent aujourd'hui</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
