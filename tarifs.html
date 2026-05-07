@@ -3,21 +3,167 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AfriTalent — Accueil</title>
-<!-- Bootstrap 5 via CDN : feuille de style -->
-<link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
-<!-- Votre feuille de style personnelle -->
-<link rel="stylesheet" href="css/style.css">
+<title>AfriTalent — Tarifs</title>
+  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
-<!-- Le contenu de la page sera ajoute ici -->
-<!-- Bootstrap 5 via CDN : script JavaScript -->
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script>
-<!-- Votre script JavaScript -->
-<script src="js/main.js"></script>
+     <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">AfriTalent</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- TITRE -->
+        <div class="container text-center mt-5">
+          <h2 class="fw-bold">Nos Tarifs</h2>
+          <p class="text-muted"> Choisissez le plan adapté</p>
+        </div>
+
+        <!-- TARIFS -->
+        <div class="container mt-4">
+          <div class="row text-center">
+            <!-- GRATUIT -->
+            <div class="col-md-4 mb-4">
+              <div class="card p-4 shadow-sm h-100">
+                <h4>Gratuit</h4>
+                <h2 class="text-primary">0 FCFA</h2>
+                <ul class="list-unstyled mt-3">
+                  <li>✔ Accès limité</li>
+                  <li>✔ Profil basique</li>
+                  <li>✖ Support prioritaire</li>
+                </ul>
+                <button class="btn btn-outline-primary mt-3">Choisir</button>
+              </div>
+            </div>
+
+            <!-- PRO -->
+            <div class="col-md-4 mb-4">
+              <div class="card p-4 shadow border-primary h-100">
+                <span class="badge bg-primary mb-2">Populaire</span>
+                <h4>Pro</h4>
+                <h2 class="text-primary">5000 FCFA</h2>
+                <ul class="list-unstyled mt-3">
+                  <li>✔ Accès complet</li>
+                  <li>✔ Mise en avant</li>
+                  <li>✔ Support rapide</li>
+                </ul>
+                <button class="btn btn-primary mt-3">Choisir</button>
+              </div>
+            </div>
+
+            <!-- ENTREPRISE -->
+            <div class="col-md-4 mb-4">
+              <div class="card p-4 shadow-sm h-100">
+                <h4>Entreprise</h4>
+                <h2 class="text-primary">10000 FCFA</h2>
+                <ul class="list-unstyled mt-3">
+                  <li>✔ Tout inclus</li>
+                  <li>✔ Support dédié</li>
+                  <li>✔ Accès premium</li>
+                </ul>
+                <button class="btn btn-outline-primary mt-3">Choisir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="container mt-5">
+          <h3 class="text-center mb-4">FAQ</h3>
+          <div class="accordion" id="faq">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q1">
+                      Le plan gratuit est-il limité ?
+                </button>
+              </h2>
+              <div id="q1" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  Oui, certaines fonctionnalités sont limitées.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q2">
+                   Puis-je changer de plan ?
+                </button>
+              </h2>
+              <div id="q2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                   Oui, vous pouvez changer à tout moment.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+
+   <!-- FOOTER COMPLET -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <!-- Colonne 1 -->
+            <div class="col-md-3">
+                <h5>AfriTalent</h5>
+                <p>La plateforme qui connecte les talents africains aux entreprises du monde entier.</p>
+            </div>
+            
+            <!-- Colonne 2 -->
+            <div class="col-md-3">
+                <h5>Liens rapides</h5>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="freelances.html">Freelances</a></li>
+                    <li><a href="tarifs.html">Tarifs</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                </ul>
+            </div>
+            
+            <!-- Colonne 3 -->
+            <div class="col-md-3">
+                <h5>Ressources</h5>
+                <ul>
+                    
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            
+            <!-- Colonne 4 -->
+            <div class="col-md-3">
+                <h5>Contact</h5>
+                <ul>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                    <li><a href="mailto:contact@afritalent.com">contact@afritalent.com</a></li>
+                    <li><a href="tel:+221 76 187 34 94">+221 76 187 34 94</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Ligne copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 AfriTalent. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

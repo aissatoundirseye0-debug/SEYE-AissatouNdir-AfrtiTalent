@@ -1,23 +1,144 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AfriTalent — Accueil</title>
-<!-- Bootstrap 5 via CDN : feuille de style -->
-<link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-rel="stylesheet">
-<!-- Votre feuille de style personnelle -->
-<link rel="stylesheet" href="css/style.css">
+<title>AfriTalent — Contact</title>
+  
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
-<!-- Le contenu de la page sera ajoute ici -->
-<!-- Bootstrap 5 via CDN : script JavaScript -->
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-></script>
-<!-- Votre script JavaScript -->
-<script src="js/main.js"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">AfriTalent</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section class="text-center mb-5">
+            <h1>Contactez-nous</h1>
+            <p class="lead">Une question ? Un projet ? Notre équipe vous répond sous 24h.</p>
+        </section>
+
+        <div class="row">
+            <div class="col-md-7">
+                <section>
+                    <h2 class="mb-4">Envoyez-nous un message</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nom" class="form-label">Nom complet</label>
+                            <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Adresse email</label>
+                            <input type="email" class="form-control" id="email" placeholder="nom@exemple.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="sujet" class="form-label">Sujet</label>
+                            <select class="form-select" id="sujet">
+                                <option selected>Choisir un sujet...</option>
+                                <option value="1">Je suis un client</option>
+                                <option value="2">Je suis un freelance</option>
+                                <option value="3">Partenariat</option>
+                                <option value="4">Autre</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Votre message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Texte fictif : Décrivez votre projet ici..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    </form>
+                </section>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="card h-100 bg-light">
+                    <div class="card-body p-4">
+                        <h4 class="card-title mb-4">Informations de contact</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <strong>Email :</strong><br>
+                                <span class="text-muted">contact@afritalent.com</span>
+                            </li>
+                            <li class="mb-3">
+                                <strong>Téléphone :</strong><br>
+                                <span class="text-muted">+221 76 187 34 94</span>
+                            </li>
+                            <li class="mb-4">
+                                <strong>Adresse :</strong><br>
+                                <span class="text-muted"> Plateau, Dakar, Sénégal</span>
+                                <!-- SECTION MAPS -->
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30878.08470239681!2d-17.43905385!3d14.669523699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1724ebcf41b5d%3A0x2d84ad82d5bef1a6!2sDakar-Plateau%2C%20Dakar!5e0!3m2!1sfr!2ssn!4v1777813158991!5m2!1sfr!2ssn" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h5>AfriTalent</h5>
+                <p>La plateforme qui connecte les talents africains aux entreprises du monde entier.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Liens rapides</h5>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="freelances.html">Freelances</a></li>
+                    <li><a href="tarifs.html">Tarifs</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Ressources</h5>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Contact</h5>
+                <ul>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                    <li><a href="mailto:contact@afritalent.com">contact@afritalent.com</a></li>
+                    <li><a href="tel:+221761873494">+221 76 187 34 94</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AfriTalent. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
