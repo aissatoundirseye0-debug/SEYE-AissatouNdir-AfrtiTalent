@@ -1,8 +1,8 @@
 :root {
-    --couleur-primaire: #0d6efd;
+    --couleur-primaire:#0d6efd;
     --couleur-sombre: #212529;
     --couleur-claire: #f8f9fa;
-    --couleur-accent: #ffc107;
+    --couleur-accent: #ffc1074d;
 
     --police-titres: 'Poppins', sans-serif;
     --police-texte: 'Open Sans', sans-serif;
@@ -20,13 +20,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: var(--police-texte);
-    color: var(--couleur-sombre);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding-top: 80px;
     line-height: 1.7;
-    background-color: var(--couleur-claire);
-    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+body { 
+    padding-top: 80px; 
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 img {
@@ -50,17 +56,17 @@ a:hover {
     color: var(--couleur-sombre);
 }
 
-/* ===== NAVBAR ===== */
+
 .navbar {
     padding: var(--espacement-md) 0;
-    background: white;
+    background:white;
     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 .navbar-brand {
     font-family: var(--police-titres);
     font-weight: 700;
     font-size: 1.75rem;
-    color: var(--couleur-primaire) !important;
+    color: var(--couleur-primaire);
 }
 .nav-link {
     font-weight: 600;
@@ -71,7 +77,8 @@ a:hover {
     color: var(--couleur-primaire);
 }
 
-/* ===== HERO ===== */
+
+
 .hero-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -102,7 +109,7 @@ a:hover {
     color: #6c757d;
 }
 
-/* ===== CARTES ===== */
+
 .card {
     border: none;
     border-radius: var(--rayon-bordure);
@@ -138,7 +145,7 @@ a:hover {
     margin-bottom: 4px;
 }
 
-/* ===== BENTO GRID ===== */
+
 .bento-grid {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -162,7 +169,7 @@ a:hover {
     color: var(--couleur-primaire);
 }
 
-/* ===== IMAGES ===== */
+
 .img-freelance {
     width: 100%;
     height: var(--hauteur-img-freelance);
@@ -180,13 +187,13 @@ a:hover {
     transform: scale(1.05);
 }
 
-/* ===== ABOUT TEAM ===== */
+
 .about-team .card-img-top {
     height: 220px;
     object-fit: cover;
 }
 
-/* ===== MAP & CAROUSEL ===== */
+
 .map-fixe {
     width: 100%;
     height: 300px;
@@ -258,4 +265,303 @@ footer a:hover {
     .card-img-top {
         height: 200px;
     }
+}
+.navbar {
+       padding: var(--espacement-md) 0;
+       background: white;
+       box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+       transition: padding 0.3s;
+   }
+   @media (max-width: 768px) {
+       .navbar {
+           padding: 12px 0;
+       }
+   }
+   
+   
+.hero-img {
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+@media (min-width: 992px) {
+    .hero-section {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+    }
+}
+.hero-section{
+    background:#111827;
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+    padding:80px 0;
+}
+
+.hero-title{
+    font-size: 4.5rem; 
+    margin-top: 60px;  
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.hero-text{
+    color:#d1d5db;
+    font-size:1.2rem;
+    margin:25px 0;
+}
+
+.hero-image{
+    width:200%;
+    max-width:600px;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,.3);
+}
+
+.hero-section .btn-primary{
+    padding:15px 30px;
+    border-radius:12px;
+}
+
+@media (max-width:768px){
+
+    .hero-section{
+        text-align:center;
+        min-height:auto;
+        padding:60px 0;
+    }
+
+    .hero-title{
+        font-size:2.5rem;
+    
+    }
+    .hero-image{
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    display: block;
+}
+}
+.afritalent-logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+}
+
+.logo-box{
+    width:32px;
+    height:32px;
+    background:white;
+    border-radius:8px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Poppins', sans-serif;
+    font-weight:700;
+    color:black;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+}
+.afritalent-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.logo-box { 
+    width: 40px; height: 40px; 
+    background: var(--couleur-primaire); 
+    color: white; 
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; border-radius: 8px;
+}
+
+/* DARK MODE */
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --nav-bg: rgba(30,30,30,0.8);
+    --card-bg: #1e1e1e;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding-top: 80px; 
+}
+
+.navbar {
+    background: var(--nav-bg);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+.navbar-scrolled {
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* BACK TO TOP */
+#back-to-top {
+    position: fixed;
+    bottom: 30px; right: 30px;
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    display: none;
+    align-items: center; justify-content: center;
+    z-index: 999;
+}
+#back-to-top.show { display: flex; }
+
+.card { background-color: var(--card-bg); }
+.badge.bg-primary {
+    background-color: var(--couleur-primaire);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+
+
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select {
+    background-color: #2a2a2a;
+    border-color: #444;
+    color: #e0e0e0;
+}
+
+[data-theme="dark"] .form-control::placeholder {
+    color: #888;
+}
+
+
+.accordion-item {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--rayon-bordure);
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.accordion-button {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    font-family: var(--police-titres);
+    font-weight: 600;
+    padding: 1.25rem;
+    transition: 0.3s;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--couleur-primaire);
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--couleur-primaire);
+}
+
+.accordion-body {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    padding: 1.25rem;
+}
+.bg-light {
+    background-color: var(--couleur-claire);
+    transition: background-color 0.3s;
+}
+
+.bg-primary {
+    background-color: var(--couleur-primaire);
+}
+.text-primary {
+    color: var(--couleur-primaire);
+    font-family: var(--police-titres);
+    font-weight: 800;
+}
+.badge.bg-primary {
+    background-color: var(--couleur-primaire);
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+#theme-toggle {
+    background: transparent;
+    border: 2px solid var(--couleur-accent);
+    color: var(--couleur-accent);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#theme-toggle:hover {
+    background: var(--couleur-accent);
+    color: var(--nav-bg);
+    transform: rotate(180deg);
+}
+ .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+ .testimonial-card {
+    max-width: 700px;
+    background: var(--card-bg);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    padding: 50px 40px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+}
+.testimonial-text {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--text-color);
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+.testimonial-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    border: 4px solid var(--couleur-primaire);
+}
+.testimonial-name {
+    font-family: var(--police-titres);
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.testimonial-role {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+ @media (max-width: 768px) {
+    body { padding-top: 70px; }
+    .hero-title { font-size: 2.5rem; }
+    .hero-image { width: 80%; margin: auto; }
+    .card-img-top { height: 220px; }
+    #temoignagesCarousel { padding: 0 50px; }
+    .carousel-control-prev { left: 5px; }
+    .carousel-control-next { right: 5px; }
+    .testimonial-card { padding: 40px 25px; margin: 0 20px; }
+    .testimonial-text { font-size: 1.1rem; }
 }
