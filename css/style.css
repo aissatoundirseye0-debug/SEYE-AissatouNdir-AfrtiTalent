@@ -28,13 +28,6 @@ body {
     line-height: 1.7;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-body { 
-    padding-top: 80px; 
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -46,7 +39,6 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--couleur-sombre);
     margin-bottom: var(--espacement-md);
 }
-
 a {
     color: var(--couleur-primaire);
     text-decoration: none;
@@ -55,8 +47,6 @@ a {
 a:hover {
     color: var(--couleur-sombre);
 }
-
-
 .navbar {
     padding: var(--espacement-md) 0;
     background:white;
@@ -76,9 +66,6 @@ a:hover {
 .nav-link.active {
     color: var(--couleur-primaire);
 }
-
-
-
 .hero-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -108,8 +95,6 @@ a:hover {
     margin: 0;
     color: #6c757d;
 }
-
-
 .card {
     border: none;
     border-radius: var(--rayon-bordure);
@@ -144,8 +129,6 @@ a:hover {
     margin-right: 4px;
     margin-bottom: 4px;
 }
-
-
 .bento-grid {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -168,8 +151,6 @@ a:hover {
     font-size: 50px;
     color: var(--couleur-primaire);
 }
-
-
 .img-freelance {
     width: 100%;
     height: var(--hauteur-img-freelance);
@@ -186,14 +167,10 @@ a:hover {
 .service-card:hover .img-service {
     transform: scale(1.05);
 }
-
-
 .about-team .card-img-top {
     height: 220px;
     object-fit: cover;
 }
-
-
 .map-fixe {
     width: 100%;
     height: 300px;
@@ -207,11 +184,10 @@ a:hover {
     border-radius: 50%;
     padding: 1.5rem;
 }
-
 /* ===== FOOTER ===== */
 footer {
     background-color: var(--couleur-sombre);
-    color: white;
+    color:white;
     padding: 3rem 0 1rem 0;
     margin-top: 60px;
 }
@@ -226,10 +202,10 @@ footer ul li {
     margin-bottom: 10px;
 }
 footer a {
-    color: #d1d5db;
+    color: white;
 }
 footer a:hover {
-    color: white;
+    color:white;
 }
 .footer-bottom {
     border-top: 1px solid rgba(255,255,255,0.1);
@@ -237,7 +213,6 @@ footer a:hover {
     padding-top: 20px;
     text-align: center;
 }
-
 /* ===== RESPONSIVE MOBILE ===== */
 @media (max-width: 768px) {
     :root {
@@ -277,15 +252,12 @@ footer a:hover {
            padding: 12px 0;
        }
    }
-   
-   
 .hero-img {
     max-width: 500px;
     width: 100%;
     display: block;
     margin: auto;
 }
-
 @media (min-width: 992px) {
     .hero-section {
         min-height: 70vh;
@@ -294,24 +266,36 @@ footer a:hover {
     }
 }
 .hero-section{
-    background:#111827;
-    min-height:80vh;
-    display:flex;
-    align-items:center;
-    padding:80px 0;
-}
+    background: url("../images/WhatsApp\ Image\ 2026-06-11\ at\ 18.39.56\ fond\ noir.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+    min-height: 80vh;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    padding: 120px 0;
+}
 .hero-title{
-    font-size: 4.5rem; 
-    margin-top: 60px;  
-    line-height: 1.1;
-    font-weight: 700;
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+    max-width: 900px;
+    margin: auto;
 }
-
 .hero-text{
-    color:#d1d5db;
-    font-size:1.2rem;
-    margin:25px 0;
+    color: #f1f1f1;
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 20px auto;
 }
 
 .hero-image{
@@ -320,20 +304,16 @@ footer a:hover {
     border-radius:20px;
     box-shadow:0 20px 40px rgba(0,0,0,.3);
 }
-
 .hero-section .btn-primary{
     padding:15px 30px;
     border-radius:12px;
 }
-
 @media (max-width:768px){
-
     .hero-section{
         text-align:center;
         min-height:auto;
         padding:60px 0;
     }
-
     .hero-title{
         font-size:2.5rem;
     
@@ -344,36 +324,17 @@ footer a:hover {
     margin: auto;
     display: block;
 }
-}
-.afritalent-logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    text-decoration:none;
-}
+@media(max-width:768px){
 
-.logo-box{
-    width:32px;
-    height:32px;
-    background:white;
-    border-radius:8px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-family:'Poppins', sans-serif;
-    font-weight:700;
-    color:black;
-    box-shadow:0 2px 8px rgba(0,0,0,0.15);
-}
-.afritalent-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.logo-box { 
-    width: 40px; height: 40px; 
-    background: var(--couleur-primaire); 
-    color: white; 
-    display: flex; align-items: center; justify-content: center;
-    font-weight: 700; border-radius: 8px;
-}
+    .hero-title{
+        font-size: 2.5rem;
+    }
 
+    .hero-text{
+        font-size: 1rem;
+    }
+
+}}
 /* DARK MODE */
 [data-theme="dark"] {
     --bg-color: #121212;
@@ -381,14 +342,6 @@ footer a:hover {
     --nav-bg: rgba(30,30,30,0.8);
     --card-bg: #1e1e1e;
 }
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    padding-top: 80px; 
-}
-
 .navbar {
     background: var(--nav-bg);
     backdrop-filter: blur(10px);
@@ -399,7 +352,6 @@ body {
     padding: 0.5rem 0;
     box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
-
 /* BACK TO TOP */
 #back-to-top {
     position: fixed;
@@ -411,28 +363,21 @@ body {
     z-index: 999;
 }
 #back-to-top.show { display: flex; }
-
 .card { background-color: var(--card-bg); }
 .badge.bg-primary {
     background-color: var(--couleur-primaire);
     color: white;
     transition: background-color 0.3s ease;
 }
-
-
-
 [data-theme="dark"] .form-control,
 [data-theme="dark"] .form-select {
     background-color: #2a2a2a;
     border-color: #444;
     color: #e0e0e0;
 }
-
 [data-theme="dark"] .form-control::placeholder {
     color: #888;
 }
-
-
 .accordion-item {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -440,7 +385,6 @@ body {
     margin-bottom: 12px;
     overflow: hidden;
 }
-
 .accordion-button {
     background-color: var(--card-bg);
     color: var(--text-color);
@@ -449,17 +393,14 @@ body {
     padding: 1.25rem;
     transition: 0.3s;
 }
-
 .accordion-button:not(.collapsed) {
     background-color: var(--couleur-primaire);
     color: white;
 }
-
 .accordion-button:focus {
     box-shadow: none;
     border-color: var(--couleur-primaire);
 }
-
 .accordion-body {
     background-color: var(--card-bg);
     color: var(--text-color);
@@ -499,15 +440,6 @@ body {
     color: var(--nav-bg);
     transform: rotate(180deg);
 }
- .fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
  .testimonial-card {
     max-width: 700px;
     background: var(--card-bg);
@@ -518,7 +450,6 @@ body {
     text-align: center;
     transition: 0.3s;
 }
-
 .stars {
     color: #ffc107;
     font-size: 1.5rem;
@@ -549,7 +480,6 @@ body {
     margin-bottom: 5px;
     color: var(--text-color);
 }
-
 .testimonial-role {
     color: #6c757d;
     font-size: 0.9rem;
@@ -564,4 +494,200 @@ body {
     .carousel-control-next { right: 5px; }
     .testimonial-card { padding: 40px 25px; margin: 0 20px; }
     .testimonial-text { font-size: 1.1rem; }
+}
+ [data-theme="dark"] .card,
+[data-theme="dark"] .step-card,
+[data-theme="dark"] .service-card {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+}
+[data-theme="dark"] .card-body,
+[data-theme="dark"] .card-title,
+[data-theme="dark"] .card-text,
+[data-theme="dark"] h5,
+[data-theme="dark"] p {
+    color: var(--text-color) !important;
+}
+/* Titre sections */
+[data-theme="dark"] h2 {
+    color: #ffffff !important;
+}
+/* Cards "Comment ça marche" */
+[data-theme="dark"] .step-card {
+    background: #2a2a2a !important;
+    border: 1px solid #444 !important;
+}
+[data-theme="dark"] .step-number {
+    color: var(--couleur-primaire) !important;
+}
+[data-theme="dark"] .step-card h5 {
+    color: #ffffff !important;
+}
+[data-theme="dark"] .step-card p {
+    color: #d0d0d0 !important;
+    opacity: 1;
+}
+/* Services */
+[data-theme="dark"] .service-card .card-body {
+    background: #2a2a2a !important;
+}
+[data-theme="dark"] .service-card .card-title {
+    color: #ffffff !important;
+}
+[data-theme="dark"] .service-card .card-text {
+    color: #d0d0d0 !important;
+    opacity: 1;
+}
+/* Navbar dark mode */
+[data-theme="dark"] .navbar {
+    background: var(--nav-bg) !important;
+}
+[data-theme="dark"] .nav-link {
+    color: #e0e0e0 !important;
+}
+[data-theme="dark"] .nav-link:hover,
+[data-theme="dark"] .nav-link.active {
+    color: var(--couleur-accent) !important;
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .cta-title { font-size: 1.8rem; }
+    .cta-text { font-size: 1rem; }
+    .cta-freelance { padding: 60px 20px !important; }
+}
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+.navbar-brand:hover img {
+    transform: scale(1.05);
+}
+/* Quand navbar shrink */
+.navbar-brand img {
+    height: 35px;
+}
+/* Pour dark mode si tu utilises data-theme */
+[data-theme="dark"] .footer {
+    background-color: #000;
+    color: #f0f0f0;
+}
+[data-theme="dark"] .footer h5,
+[data-theme="dark"] .footer h6 {
+    color: #ffffff;
+}
+/* Style compteurs stats */
+.counter {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--couleur-primaire);
+    display: block;
+    line-height: 1.2;
+}
+.counter-label {
+    font-size: 1.1rem;
+    color: var(--couleur-texte);
+    margin-top: 0.5rem;
+}
+@media (max-width: 768px) {
+    .counter {
+        font-size: 2.5rem;
+    }
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+/* État visible après scroll */
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.cta-freelance {
+    background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+    color: white;
+    padding: 80px 0 !important;
+    margin-top: 60px;
+}
+.cta-title {
+    font-family: var(--police-titres);
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white !important;
+    margin-bottom: 15px;
+}
+.cta-text {
+    font-size: 1.2rem;
+    color: rgba(255,255,255,0.9);
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+/* Bouton blanc qui vend */
+.cta-freelance .btn-light {
+    background: white;
+    color: var(--couleur-primaire);
+    font-family: var(--police-titres);
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 15px 40px;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.cta-freelance .btn-light:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    background: #f8f9fa;
+}
+/* Dark mode CTA */
+[data-theme="dark"] .cta-freelance {
+    background: linear-gradient(135deg, #3d8bfd 0%, #0d6efd 100%);
+}
+/* Responsive mobile */
+@media (max-width: 768px) {
+    .cta-title { 
+        font-size: 1.8rem; 
+    }
+    .cta-text { 
+        font-size: 1rem; 
+        padding: 0 20px;
+    }
+    .cta-freelance { 
+        padding: 60px 20px !important; 
+    }
+}
+/* Texte muted plus lisible */
+[data-theme="dark"] .text-muted {
+    color: #b0b0b0 !important;
+}
+[data-theme="dark"] .bg-light {
+    background-color: #0a0a0a !important;
+}
+/* Titre "Ce que disent nos clients" */
+[data-theme="dark"] .text-center.mb-5 h2 {
+    color: #ffffff !important;
+}
+/* Sous-titre "Plus de 500 entreprises..." */
+[data-theme="dark"] .text-center.mb-5 .text-muted {
+    color: #b0b0b0 !important;
+}
+/* Card témoignage */
+[data-theme="dark"] .card {
+    background-color: #1a1a1a !important;
+    border: 1px solid #333 !important;
+    color: #e0e0e0 !important;
+}
+/* Texte du témoignage entre guillemets */
+[data-theme="dark"] .card-text {
+    color: #e0e0e0 !important;
+}
+/* Nom + rôle CTO */
+[data-theme="dark"] .card h6,
+[data-theme="dark"] .card small {
+    color: #ffffff;
+}
+/* Étoiles jaunes restent jaunes */
+.stars {
+    color: #ffc107;
 }
