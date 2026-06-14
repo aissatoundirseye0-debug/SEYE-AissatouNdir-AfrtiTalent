@@ -11,15 +11,22 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <header>
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
              <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="images/WhatsApp Image 2026-06-09 at 19.14.48.jpeg" alt="AfriTalent Logo" height="40" class="me-2">
+                <img src="images/logo-afritalent.jpeg" alt="AfriTalent Logo" height="40" class="me-2">
                 <span>AfriTalent</span>
             </a> 
             
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+       <button class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Ouvrir le menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,9 +47,9 @@
     </nav>
 </header>
 
-<main class="container my-5" style="padding-top: 80px;">
+<main class="container my-5">
     <!-- TITRE -->
-    <section class="text-center mb-5 fade-in">
+    <section class="text-center hero-about py-5">
         <h1>À propos d'AfriTalent</h1>
         <p class="lead">La plateforme qui connecte l'excellence africaine aux opportunités mondiales depuis 2024.</p>
     </section>
@@ -56,7 +63,7 @@
                 <p>Aujourd'hui, AfriTalent collabore avec des entreprises en Europe, Amérique du Nord et Moyen-Orient.</p>
             </div>
             <div class="col-12 col-md-6 fade-in">
-                <img src="images/WhatsApp Image 2026-05-23 at 15.54.52.jpeg" class="img-fluid rounded-4 shadow" alt="Équipe AfriTalent">
+                <img src="images/equipe-afritalent.jpeg" class="img-fluid rounded-4 shadow" alt="Équipe AfriTalent">
             </div>
         </div>
     </section>
@@ -69,7 +76,7 @@
                 <div class="card h-100 text-center">
                     <img src="images/4385015-nair-nany.avif" class="card-img-top" alt="Absa DIOP">
                     <div class="card-body">
-                        <h5 class="card-title">Absa DIOP</h5>
+                        <h3 class="card-title">Absa DIOP</h3>
                         <p class="text-muted">CEO & Co-fondatrice</p>
                         <div class="d-flex justify-content-center gap-3">
                             <a href="#"><i class="bi bi-linkedin"></i></a>
@@ -82,7 +89,7 @@
                 <div class="card h-100 text-center">
                     <img src="images/542980-e80bb444-large.jpg" class="card-img-top" alt="Diarra THIOUNE">
                     <div class="card-body">
-                        <h5 class="card-title">Diarra THIOUNE</h5>
+                        <h3 class="card-title">Diarra THIOUNE</h3>
                         <p class="text-muted">CTO</p>
                         <div class="d-flex justify-content-center gap-3">
                             <a href="#"><i class="bi bi-github"></i></a>
@@ -95,7 +102,7 @@
                 <div class="card h-100 text-center">
                     <img src="images/51e2d8086e3ae21d375571e91a6dc079.jpg" class="card-img-top" alt="NdeyeFatou NDIOUR">
                     <div class="card-body">
-                        <h5 class="card-title">NdeyeFatou NDIOUR</h5>
+                        <h3 class="card-title">NdeyeFatou NDIOUR</h3>
                         <p class="text-muted">Head of Design</p>
                         <div class="d-flex justify-content-center gap-3">
                             <a href="#"><i class="bi bi-behance"></i></a>
@@ -108,7 +115,7 @@
                 <div class="card h-100 text-center">
                     <img src="images/8479c4a5-af97-4e5d-a4f1-beb56ef56963-profile_image-300x300.png" class="card-img-top" alt="Ibrahima Fall">
                     <div class="card-body">
-                        <h5 class="card-title">Ibrahima FALL</h5>
+                        <h3 class="card-title">Ibrahima FALL</h3>
                         <p class="text-muted">Responsable Partenariats</p>
                         <div class="d-flex justify-content-center gap-3">
                             <a href="#"><i class="bi bi-linkedin"></i></a>
@@ -121,28 +128,28 @@
     </section>
 
     <!-- 3. VALEURS -->
-    <section class="py-5 bg-body-tertiary">
+    <section class="py-5 section-valeurs">
         <div class="container">
             <h2 class="text-center fw-bold mb-5 fade-in">Nos Valeurs</h2>
             <div class="row g-4">
                 <div class="col-md-4 fade-in">
                     <div class="card h-100 border-0 text-center p-4">
                         <div class="fs-1 mb-3">🛡️</div>
-                        <h4>Confiance</h4>
+                        <h2>Confiance</h2>
                         <p class="text-muted">Chaque profil est vérifié manuellement. Paiement sécurisé via escrow.</p>
                     </div>
                 </div>
                 <div class="col-md-4 fade-in">
                     <div class="card h-100 border-0 text-center p-4">
                         <div class="fs-1 mb-3">⚡</div>
-                        <h4>Rapidité</h4>
+                        <h2>Rapidité</h2>
                         <p class="text-muted">Trouvez le bon freelance en 48h max. Réponse support sous 24h.</p>
                     </div>
                 </div>
                 <div class="col-md-4 fade-in">
                     <div class="card h-100 border-0 text-center p-4">
                         <div class="fs-1 mb-3">🌍</div>
-                        <h4>Impact</h4>
+                        <h2>Impact</h2>
                         <p class="text-muted">Chaque mission créée contribue au développement économique local.</p>
                     </div>
                 </div>
@@ -181,16 +188,19 @@
         </div>
     </section>
 </main>
-
+<!--FOOTER-->
 <footer>
-     <div class="container">
+    <div class="container">
         <div class="row">
+            <!-- Colonne 1 -->
             <div class="col-12 col-md-3 mb-4">
-                <h5>AfriTalent</h5>
+                <h3>AfriTalent</h3>
                 <p>La plateforme qui connecte les talents africains aux entreprises du monde entier.</p>
             </div>
+            
+            <!-- Colonne 2 -->
             <div class="col-12 col-md-3 mb-4">
-                <h5>Liens rapides</h5>
+                <h3>Liens rapides</h3>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="freelances.html">Freelances</a></li>
@@ -198,16 +208,20 @@
                     <li><a href="about.html">À propos</a></li>
                 </ul>
             </div>
+            
+            <!-- Colonne 3 -->
             <div class="col-12 col-md-3 mb-4">
-                <h5>Ressources</h5>
+                <h3>Ressources</h3>
                 <ul>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Support</a></li>
                     <li><a href="#">Blog</a></li>
                 </ul>
             </div>
+            
+            <!-- Colonne 4 -->
             <div class="col-12 col-md-3 mb-4">
-                <h5>Contact</h5>
+                <h3>Contact</h3>
                 <ul>
                     <li><a href="contact.html">Nous contacter</a></li>
                     <li><a href="mailto:contact@afritalent.com">contact@afritalent.com</a></li>
@@ -215,6 +229,7 @@
                 </ul>
             </div>
         </div>
+        
         <div class="footer-bottom">
             <p>&copy; 2026 AfriTalent. Tous droits réservés.</p>
         </div>
@@ -224,7 +239,7 @@
         <i class="bi bi-arrow-up"></i>
     </button>
 </footer>
-
+<!--SCRIPT JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
