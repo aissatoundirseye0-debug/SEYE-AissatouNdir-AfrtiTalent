@@ -5,6 +5,10 @@
     --couleur-claire: #f8f9fa;
     --couleur-accent: #ffc1074d;
 
+    --card-bg-color: #ffffff; 
+    --text-color: #212529; 
+    --border-color: #dee2e6; 
+    --couleur-texte-secondaire:#6c757d;
     --police-titres: 'Poppins', sans-serif;
     --police-texte: 'Open Sans', sans-serif;
 
@@ -14,6 +18,7 @@
     --hauteur-img-freelance: 320px;
     --espacement-md: 16px;
     --espacement-lg: 32px;
+    
 }
 
 /* ===== 2. RESET DE BASE ===== */
@@ -46,7 +51,9 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--couleur-sombre);
     margin-bottom: var(--espacement-md);
 }
-
+h3{
+    color: white;
+}
 /* ===== 6. LIENS ===== */
 a {
     color: var(--couleur-primaire);
@@ -65,7 +72,7 @@ a:hover {
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
 }
-.navbar-scrolled {
+.navbar.scrolled {
     padding: 0.5rem 0;
     box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
@@ -469,9 +476,14 @@ footer a:hover {
 [data-theme="dark"] p {
     color: var(--text-color) !important;
 }
+
 [data-theme="dark"] h2 {
     color: #ffffff !important;
 }
+[data-theme="dark"] .counter {
+  color: #0d6efd !important;
+}
+
 [data-theme="dark"] .step-card {
     background: #2a2a2a !important;
     border: 1px solid #444 !important;
@@ -516,18 +528,21 @@ footer a:hover {
 .navbar-brand:hover img {
     transform: scale(1.05);
 }
-/* Quand navbar shrink */
 .navbar-brand img {
+    height: 40px;
+    width: auto;
+    transition: all 0.3s ease;
+}
+.navbar.scrolled .navbar-brand img {
     height: 35px;
 }
-
 /* ===== 28. FOOTER DARK MODE ===== */
-[data-theme="dark"] .footer {
+[data-theme="dark"] footer {
     background-color: #000;
     color: #f0f0f0;
 }
-[data-theme="dark"] .footer h5,
-[data-theme="dark"] .footer h6 {
+[data-theme="dark"] footer h5,
+[data-theme="dark"] footer h6 {
     color: #ffffff;
 }
 
@@ -557,12 +572,6 @@ footer a:hover {
 }
 
 /* ===== 31. SECTION CTA FREELANCE ===== */
-.cta-freelance {
-    background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
-    color: white;
-    padding: 80px 0 !important;
-    margin-top: 60px;
-}
 .cta-title {
     font-family: var(--police-titres);
     font-size: 2.5rem;
@@ -592,6 +601,28 @@ footer a:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     background: #f8f9fa;
+}
+:root {
+  --bg-cta: #0d6efd; /* Bleu Bootstrap en mode clair */
+  --text-cta: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg-cta: #212529; /* Noir comme ton footer en mode sombre */
+  --text-cta: #ffffff;
+}
+
+/* Section CTA "Vous êtes freelance ?" */
+.cta-section {
+  background-color: var(--bg-cta);
+  color: var(--text-cta);
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 0;
+}
+
+.cta-section .btn {
+  margin-top: 15px;
 }
 [data-theme="dark"] .cta-freelance {
     background: linear-gradient(135deg, #3d8bfd 0%, #0d6efd 100%);
@@ -702,3 +733,188 @@ footer a:hover {
         margin-bottom: 10px; 
     }
 }
+/* FIX BOUTONS HERO MOBILE */
+@media (max-width: 576px) {
+    .hero-section .d-flex {
+        flex-direction: column;
+    }
+    .hero-section .btn-lg {
+        width: 100%;
+    }
+}
+
+/* FIX CAROUSEL MOBILE */
+@media (max-width: 576px) {
+    .carousel .rounded-circle {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 8%;
+    }
+}
+/* ===== SECTION VALEURS - GÈRE DARK MODE ===== */
+.section-valeurs {
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease;
+}
+
+.section-valeurs .card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.section-valeurs .card h4,
+.section-valeurs .card p {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .section-valeurs {
+    background-color: #1a1a1a;
+}
+/* ===== SECTION TARIFS - GÈRE DARK MODE ===== */
+.section-tarifs {
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease;
+}
+
+.section-tarifs .card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.section-tarifs .card h4,
+.section-tarifs .card h2,
+.section-tarifs .card li {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .section-tarifs {
+    background-color: #0a0a0a;
+}
+
+/* ===== SECTION AVANTAGES - GÈRE DARK MODE ===== */
+.section-avantages {
+    background-color: var(--couleur-claire);
+    transition: background-color 0.3s ease;
+}
+
+.section-avantages .card {
+    background-color: var(--card-bg);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.section-avantages h4,
+.section-avantages p {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .section-avantages {
+    background-color: #1a1a1a;
+}
+/* ===== HERO ABOUT - CONTRASTE DARK MODE ===== */
+.hero-about {
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease;
+}
+
+.hero-about h1 {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.hero-about .lead {
+    color: var(--couleur-texte-secondaire);
+    transition: color 0.3s ease;
+}
+
+/* Force un contraste fort en dark mode */
+[data-theme="dark"] .hero-about h1 {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .hero-about .lead {
+    color: #b0b0b0;
+}
+/* ===== HERO CONTACT - CONTRASTE DARK MODE ===== */
+.hero-contact {
+    background-color: var(--bg-color);
+    padding: 60px 0 40px 0;
+    transition: background-color 0.3s ease;
+}
+
+.hero-contact h1 {
+    color: var(--text-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-contact .lead {
+    color: var(--couleur-texte-secondaire);
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+}
+
+/* Contraste fort en dark mode */
+[data-theme="dark"] .hero-contact h1 {
+    color: #ffffff;
+}
+
+[data-theme="dark"] .hero-contact .lead {
+    color: #b0b0b0;
+}
+
+/* ===== FIX TITRE + LEAD SECTION FREELANCES ===== */
+.section-freelances h1 {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section-freelances .lead {
+    color: var(--couleur-texte-secondaire);
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Force contraste en dark mode */
+[data-theme="dark"] .section-freelances h1 {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+[data-theme="dark"] .section-freelances .lead {
+    color: #e0e0e0 !important;
+}
+main {
+    padding-top: 80px;
+}
+.card-tarif{
+    border-radius: var(--rayon-bordure);
+}
+/* ===== FIX TITRE TARIFS DARK/LIGHT ===== */
+[data-theme="dark"] .section-tarifs-hero h1,
+html[data-bs-theme="dark"] .section-tarifs-hero h1 {
+  color: #ffffff !important;
+}
+
+[data-theme="light"] .section-tarifs-hero h1,
+html[data-bs-theme="light"] .section-tarifs-hero h1 {
+  color: #000 !important;
+}
+
+[data-theme="dark"] .section-tarifs-hero p,
+html[data-bs-theme="dark"] .section-tarifs-hero p {
+  color: #e0e0e0 !important;
+}
+
+[data-theme="light"] .section-tarifs-hero p,
+html[data-bs-theme="light"] .section-tarifs-hero p {
+  color: #6c757d !important;
+}
+

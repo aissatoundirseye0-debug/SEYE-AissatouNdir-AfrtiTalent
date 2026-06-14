@@ -22,6 +22,10 @@ document.addEventListener('DOMContentLoaded', function() {
         if(icon) {
             icon.className = theme === 'dark' ? 'bi bi-sun' : 'bi bi-moon';
         }
+           if(navbar) {
+        navbar.classList.toggle('navbar-dark', theme === 'dark');
+    }
+
     }
 
     // ===== 2. NAVBAR + BACK TO TOP - 1 SEUL SCROLL =====
@@ -123,7 +127,7 @@ if (formulaire) {
             valide = false;
         }
 
-        if (sujet.value === "Choisir un sujet...") {
+        if (sujet.value === "") {
             document.getElementById("erreurSujet").textContent = "Veuillez choisir un sujet";
             valide = false;
         }
